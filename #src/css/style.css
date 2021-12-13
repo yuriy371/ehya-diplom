@@ -1,0 +1,194 @@
+@charset "UTF-8";
+/* null-style */
+*, *:after, *:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /*transition: .5s ease-in-out;*/
+  /* добавим плавность переходов для всех элементов страницы*/
+}
+
+ul, li, nav {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+body {
+  font-family: Gotham;
+  font-size: 15px;
+  line-height: 1;
+  color: #373737;
+  background: #f7f7f7;
+}
+
+/* добавим очистку потока для всех контейнеров, внутри которых задано обтекание дочерних элементов */
+header:after, .container:after, footer:after, .widget-posts-list li:after, #subscribe:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* стилевой класс, который управляет шириной контейнера сетки*/
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1176px;
+  padding: 0 15px;
+}
+
+/* Intro */
+.intro {
+  width: 100%;
+  height: 1082px;
+  background: url(../img/intro.jpg) center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro__inner {
+  width: 100%;
+  max-width: 820px;
+  margin: 0 auto;
+}
+.intro__inner .intro__title {
+  font-size: 152.6px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #f5f5f5;
+}
+
+.scroll {
+  width: 100%;
+  position: absolute;
+  bottom: -250px;
+  left: 0;
+  z-index: 1;
+}
+
+.intro__scroll {
+  text-align: center;
+  font-family: OpenSans;
+  font-size: 13px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.intro__scroll .intro__btn {
+  color: #fff;
+  display: inline-block;
+  vertical-align: top;
+  width: 65px;
+  height: 65px;
+  margin-top: 22px;
+  padding: 24px 23px 26px 23px;
+  border: 1px solid white;
+  border-radius: 40px;
+  transition: background 0.2s linear, color 0.2s linear;
+}
+.intro__scroll .intro__btn:hover {
+  background: #fff;
+  color: #000;
+}
+.intro__scroll i {
+  font-size: 18px;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  height: 115px;
+  padding-top: 22px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.38);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 67px;
+  height: 67px;
+}
+.header__logo img {
+  box-shadow: 12px 8px rgba(255, 255, 255, 0.74);
+}
+
+/* Nav */
+.nav {
+  font-family: MyriadPro;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+.nav .nav__link {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 22.5px;
+  color: #fff;
+  position: relative;
+}
+.nav .nav__link:after {
+  content: "";
+  opacity: 0;
+  width: 100%;
+  height: 6px;
+  background-color: #11749e;
+  position: absolute;
+  top: 66px;
+  left: 0;
+  z-index: 1;
+  transition: opacity 0.2s linear;
+}
+.nav .nav__link:hover:after {
+  opacity: 1;
+}
+
+/*About*/
+.about {
+  position: relative;
+  background-color: #11749a;
+  text-align: center;
+  color: #fff;
+}
+.about .about__title {
+  padding-top: 173px;
+  font-family: Gotham Medium;
+  font-size: 37.6px;
+  line-height: 45px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.about .about__title .about__title_shadow {
+  padding-top: -150px;
+  font-size: 247px;
+  opacity: 0.3;
+}
+
+.about__info img {
+  width: 34px;
+  height: 34px;
+}
