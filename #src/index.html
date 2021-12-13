@@ -1,30 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Name</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ehay</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500&display=swap"
+		rel="stylesheet">
+	<!-- Style -->
 	<link rel="stylesheet" href="css/style.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<!-- Script -->
 	<script src="js/index.js" defer></script>
 </head>
 
 <body>
-
-	<div class="wrapper">
-		@@include("_header.html")
-
-		<div class="main">
-			<h1>lorem</h1>
-
+	<header class="header">
+		<div class="container">
+			<div class="header-wrapper">
+				<a href="#" class="header__logo">
+					<img src="./img/svg/logo.svg" alt="">
+				</a>
+				<div class="header__nav-wrapper">
+					<nav class="nav">
+						<ul class="nav__list">
+							<li class="nav__item"><a href="#" class="nav__link">Рекомендации</a></li>
+							<li class="nav__item"><a href="#" class="nav__link">Книги</a></li>
+							<li class="nav__item"><a href="#" class="nav__link">Блог</a></li>
+						</ul>
+					</nav>
+					<button class="button header__button">
+						Получить
+					</button>
+				</div>
+				<button class="menu-button header__menu-burger">
+					<span class="menu-button__line"></span>
+					<span class="menu-button__line"></span>
+					<span class="menu-button__line"></span>
+				</button>
+				<!-- /.header__nav-wrapper -->
+			</div>
+			<!-- /.header-wrapper -->
 		</div>
-
-		@@include("_footer.html")
-	</div>
-
-
-
+		<!-- /.container -->
+	</header>
+	<!-- /.header -->
+	<section class="about-book">
+		<div class="container">
+			<div class="about-book__wrapper">
+				<div class="about-book__info">
+					<h2 class="about-book__title">
+						<span class="about-book__color">Design Theory:</span> <br>
+						The Psychology of <br>
+						Graphic Design Pricing
+					</h2>
+					<span class="about-book__author">
+						Книга Мишеля Янга
+					</span>
+					<p class="about-book__text">
+						Спустя 15 лет я управляю собственной студией, выполнив тысячи проектов для крупных клиентов.
+						Теперь я делюсь своими золотыми стратегиями ценообразования на творческую работу.
+					</p>
+					<div class="about-book__wrapper-btn">
+						<button class="button about-book__buy">
+							Купить сейчас
+						</button>
+						<!-- /.button about-book__buy -->
+						<button class="button about-book__read">
+							Читать демо
+						</button>
+						<!-- /.button about-book__read -->
+					</div>
+					<!-- /.about-book__wrapper-btn -->
+				</div>
+				<!-- /.about-book__info -->
+				<div class="about-book__img">
+					<img class="about-book__book" src="./img/img-book/book-img-haed.png" alt="">
+				</div>
+				<!-- /.about-book__img -->
+			</div>
+			<!-- /.about-book__wrapper -->
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.about-book -->
 </body>
 
 </html>

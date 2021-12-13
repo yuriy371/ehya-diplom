@@ -1,0 +1,196 @@
+@media (max-width: 1200px) {
+	.container {
+		max-width: 1140px;
+	}
+	.about-book {
+		&__buy {
+			margin: 0 20px 0 3px;
+		}
+	}
+}
+@media (max-width: 992px) {
+	.container {
+		max-width: 960px;
+	}
+	.about-book {
+		&__wrapper {
+			align-items: flex-start;
+		}
+		&__title {
+			font-size: 40px;
+			line-height: 54px;
+		}
+		&__author {
+			font-size: 20px;
+			line-height: 24px;
+			margin: 0 0 25px 3px;
+		}
+		&__text {
+			font-size: 18px;
+			line-height: 28px;
+			margin: 0 0 36px 3px;
+		}
+		&__wrapper-btn {
+			flex-wrap: wrap;
+		}
+	}
+}
+@media (max-width: 926px) {
+	.about-book {
+		&__buy {
+			min-width: 234px;
+			margin: 0 0 10px 0;
+		}
+	}
+}
+@media (max-width: 768px) {
+	.container {
+		max-width: 720px;
+	}
+	.overflow {
+		overflow: hidden;
+	}
+	.header {
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		padding: 20px 0 56px 0;
+		&__nav-wrapper {
+			display: none;
+			position: fixed;
+			right: 0;
+			left: 0;
+			top: 100px;
+			bottom: 0;
+			flex-direction: column;
+			background: $text-color;
+			z-index: 99;
+		}
+		&__button {
+			margin: 0;
+		}
+	}
+	.nav {
+		&__list {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin: 20px 0 0 0;
+		}
+		&__item {
+			margin: 0 0 20px 0;
+		}
+		&__link {
+			color: $primary;
+		}
+	}
+	.open {
+		display: flex;
+	}
+	.menu-button {
+		display: flex;
+	}
+	.about-book {
+		padding: 140px 0 0 0;
+		&__wrapper {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		&__info {
+			flex-basis: 100%;
+			margin: 0 0px 50px 0;
+		}
+		&__buy {
+			min-width: 209px;
+			margin: 0 27px 0 3px;
+		}
+		&__img {
+			flex-basis: 100%;
+			min-height: 500px;
+		}
+	}
+}
+@media (max-width: 576px) {
+	.container {
+		max-width: 95%;
+	}
+	.about-book {
+		padding: 102px 0 0 0;
+		&__title {
+			font-weight: bold;
+			font-size: 32px;
+			line-height: 40px;
+			text-align: center;
+			letter-spacing: 0.2px;
+			margin: 0 0 24px 0;
+		}
+		&__author {
+			font-size: 16px;
+			line-height: 24px;
+			text-align: center;
+			letter-spacing: 0.2px;
+			margin: 0 0 32px 0;
+		}
+
+		&__text {
+			font-size: 16px;
+			line-height: 23px;
+			text-align: center;
+			margin: 0 0 16px 0;
+		}
+
+		&__wrapper-btn {
+			justify-content: center;
+			gap: 15px;
+		}
+
+		&__buy {
+			min-width: 176px;
+			height: 40px;
+			font-weight: bold;
+			font-size: 16px;
+			line-height: 22px;
+			text-align: center;
+			margin: 0 20px 15px 0;
+		}
+
+		&__read {
+			min-width: 176px;
+			height: 40px;
+			font-weight: bold;
+			font-size: 16px;
+			line-height: 22px;
+			text-align: center;
+		}
+
+		&__img {
+			min-height: 301px;
+		}
+
+		&__book {
+			width: 143px;
+		}
+	}
+}
+@media (max-width: 480px) and (min-width: 320px) {
+	.container {
+		max-width: 95%;
+		padding: 0 14px;
+	}
+	.header {
+		padding: 20px 0 56px 0;
+		&__logo {
+			margin: -2px 0px 0 -5px;
+		}
+	}
+	.about-book {
+		&__wrapper-btn {
+			flex-wrap: wrap;
+		}
+
+		&__buy {
+			margin: 0;
+		}
+	}
+}

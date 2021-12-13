@@ -1,3 +1,8 @@
-import test from "./modules/test"
+import modileMenu from "./modules/modileMenu"
 
-test()
+
+document.addEventListener("click", (e) => {
+	const targ = e.target
+
+	modileMenu(e, targ)
+})

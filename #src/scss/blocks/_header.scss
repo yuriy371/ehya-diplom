@@ -1,0 +1,63 @@
+.header {
+	padding: 37px 0 95px 0;
+	background: $primary;
+	&-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		width: 90px;
+		height: 28px;
+	}
+
+	&__nav-wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	&__button {
+		min-width: 148px;
+		min-height: 48px;
+		margin: 0 6px 0 53px;
+		padding: 0 10px;
+		border: 2px solid #1565d8;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 22px;
+		color: $btn-color;
+	}
+	&__menu-burger {
+	}
+}
+
+.nav {
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+		margin: 0px 11px 0 11px;
+	}
+
+	&__link {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 22px;
+		color: $text-color;
+	}
+}
+.menu-button {
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	background: none;
+	width: 24px;
+	height: 18px;
+	&__line {
+		width: 22px;
+		height: 2px;
+		background: #3a4c66;
+	}
+}

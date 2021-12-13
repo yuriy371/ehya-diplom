@@ -1,0 +1,99 @@
+.about-book {
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__info {
+		flex-basis: 52%;
+		margin: 0 30px 0 0;
+	}
+
+	&__title {
+		font-family: "Roboto Condensed";
+		font-weight: bold;
+		font-size: 48px;
+		line-height: 60px;
+		letter-spacing: 0.2px;
+		color: $text-color;
+		margin: -12px 0 28px 4px;
+	}
+
+	&__color {
+		color: #faad13;
+	}
+
+	&__author {
+		display: block;
+		font-family: Roboto;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		letter-spacing: 0.2px;
+		margin: 0 0 36px 3px;
+		text-transform: uppercase;
+	}
+
+	&__text {
+		font-size: 18px;
+		line-height: 32px;
+		margin: 0 0 56px 3px;
+	}
+
+	&__wrapper-btn {
+		display: flex;
+	}
+
+	&__buy {
+		min-width: 209px;
+		height: 58px;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 22px;
+		background: $btn-color;
+		color: $primary;
+		margin: 0 27px 0 3px;
+		text-transform: uppercase;
+	}
+
+	&__read {
+		min-width: 234px;
+		height: 58px;
+		border: 2px solid $btn-color;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 25px;
+		color: $btn-color;
+		text-transform: uppercase;
+	}
+
+	&__img {
+		position: relative;
+		flex-basis: 42%;
+		min-height: 580px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 3px 0 0;
+		z-index: -1;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			background: rgba(179, 186, 197, 0.1);
+			mix-blend-mode: normal;
+		}
+	}
+
+	&__book {
+		width: 250px;
+		text-align: center;
+		background: rgba(0, 0, 0, 0.0001);
+		box-shadow: 0px 20px 24px rgba(0, 0, 0, 0.08);
+		// margin: 0 0px 0 -18px;
+	}
+}
