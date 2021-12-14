@@ -68,6 +68,15 @@
 		text-transform: uppercase;
 	}
 
+	&__buy,
+	&__read {
+		transition: transform 0.5s;
+		&:hover {
+			transition: transform 0.5s;
+			transform: scale(1.1, 1.1);
+		}
+	}
+
 	&__img {
 		position: relative;
 		flex-basis: 42%;

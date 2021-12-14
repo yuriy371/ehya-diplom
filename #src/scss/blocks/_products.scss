@@ -1,0 +1,214 @@
+.products {
+	padding: 100px 0 79px 0;
+	&__wrapper {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	&__recommendations {
+		flex: 0 1 auto;
+		margin: 0 29px 0 3px;
+	}
+
+	&__title {
+		font-family: Roboto Condensed;
+		font-weight: bold;
+		font-size: 32px;
+		line-height: 40px;
+		letter-spacing: 0.2px;
+		margin: 0 0 30px 0;
+	}
+
+	&__cards {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__card {
+		display: flex;
+		align-items: center;
+		border: 1px solid #eceef2;
+		box-sizing: border-box;
+		border-radius: 8px;
+		padding: 10px 14px 10px 10px;
+		&-top {
+			display: flex;
+			align-items: center;
+			margin: 36px 0 0px 0;
+			&:first-child {
+				margin: 0;
+			}
+		}
+	}
+
+	&__button-more {
+		min-width: 100%;
+		min-height: 72px;
+		background: rgba(21, 101, 216, 0.1);
+		mix-blend-mode: normal;
+		border-radius: 8px;
+		font-family: Roboto Condensed;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 20px;
+		text-align: center;
+		letter-spacing: 0.2px;
+		color: $btn-color;
+		text-transform: uppercase;
+		transition: background 0.5s, color 0.5s;
+		&:hover {
+			background: rgba(21, 101, 216, 1);
+			color: $primary;
+		}
+	}
+
+	&__top-month {
+		flex: 0 1 auto;
+		min-width: 360px;
+		margin: 0 2px 0 0;
+	}
+
+	&__button-best {
+		min-width: 100%;
+		font-family: Roboto Condensed;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 20px;
+		text-align: center;
+		letter-spacing: 0.2px;
+		background: none;
+		color: $btn-color;
+		border-top: 1px solid #eceef2;
+		padding: 25px 0 0 0;
+		margin: 30px 0 0 0;
+		text-transform: uppercase;
+		&:hover {
+			color: $text-color;
+		}
+	}
+}
+.recom {
+	gap: 32px;
+	margin: 0 0 26px 0;
+	&__img {
+		width: 160px;
+		height: 238px;
+		margin: 0 20px 0 0;
+		border-radius: 8px;
+	}
+
+	&__title {
+		width: 152px;
+		margin: 0 0 16px 0;
+	}
+
+	&__genre {
+		font-size: 16px;
+		line-height: 22px;
+		margin: 0 0 24px 0;
+	}
+
+	&__price {
+		margin: 0 0 24px 0;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__wrapper-btn {
+		display: flex;
+		align-items: center;
+	}
+
+	&__button {
+		margin: 0 24px 0 0;
+	}
+
+	&__like-btn {
+		background: none;
+		margin: 6px 0px 0 -4px;
+	}
+}
+.icon {
+	width: 20px;
+	height: 20px;
+	transition: transform 0.5s;
+	&:hover {
+		transition: transform 0.5s;
+		transform: scale(1.2, 1.2);
+	}
+}
+.prod-top {
+	flex-direction: column;
+	background: rgba(179, 186, 197, 0.1);
+	mix-blend-mode: normal;
+	border-radius: 8px;
+	padding: 24px;
+	&__img {
+		width: 120px;
+		height: 177px;
+		margin: 0 26px 0 0;
+		border-radius: 6px;
+	}
+
+	&__title {
+		margin: 5px 0 15px 0;
+	}
+
+	&__price {
+		display: block;
+		margin: 0 0 22px 0;
+	}
+
+	&__wrapper {
+	}
+
+	&__wrapper-btn {
+	}
+
+	&__button {
+	}
+}
+.recom,
+.prod-top {
+	&__title {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 22px;
+		line-height: 32px;
+		letter-spacing: 0.2px;
+	}
+
+	&__price {
+		font-family: Roboto Condensed;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 24px;
+		letter-spacing: 0.2px;
+		color: $btn-color;
+	}
+
+	&__button {
+		min-width: 101px;
+		height: 36px;
+		padding: 0px 10px;
+		border-radius: 50px;
+		background: $text-color;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 22px;
+		text-align: center;
+		color: $primary;
+		transition: border 0.5s, background 0.5s, color 0.5s;
+		&:hover {
+			border: 1px solid $text-color;
+			background: $primary;
+			color: $text-color;
+		}
+	}
+}

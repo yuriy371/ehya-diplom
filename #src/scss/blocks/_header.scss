@@ -27,6 +27,11 @@
 		font-size: 16px;
 		line-height: 22px;
 		color: $btn-color;
+		transition: transform 0.5s;
+		&:hover {
+			transition: transform 0.5s;
+			transform: scale(1.1, 1.1);
+		}
 	}
 	&__menu-burger {
 	}
@@ -38,7 +43,21 @@
 	}
 
 	&__item {
+		position: relative;
 		margin: 0px 11px 0 11px;
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 0;
+			height: 2px;
+			background: $text-color;
+			transition: width 0.5s;
+		}
+		&:hover::after {
+			width: 100%;
+		}
 	}
 
 	&__link {

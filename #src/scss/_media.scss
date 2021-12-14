@@ -7,6 +7,35 @@
 			margin: 0 20px 0 3px;
 		}
 	}
+	.products {
+		&__wrapper {
+			gap: 10px;
+		}
+
+		&__recommendations {
+			margin: 0 19px 0 3px;
+		}
+
+		&__card {
+			width: 32%;
+			flex-direction: column;
+		}
+	}
+	.recom {
+		gap: 10px;
+		&__img {
+			width: 117px;
+			height: 187px;
+			margin: 0 0 20px 0;
+		}
+		&__genre {
+			margin: 0 0 12px 0;
+		}
+
+		&__price {
+			margin: 0 0 12px 0;
+		}
+	}
 }
 @media (max-width: 992px) {
 	.container {
@@ -34,6 +63,41 @@
 			flex-wrap: wrap;
 		}
 	}
+	.products {
+		&__wrapper {
+			gap: 10px;
+		}
+
+		&__recommendations {
+			margin: 0 19px 0 3px;
+		}
+
+		&__card {
+			width: 100%;
+			flex-direction: row;
+			&:nth-child(4),
+			&:nth-child(5),
+			&:nth-child(6) {
+				display: none;
+			}
+		}
+	}
+	.recom {
+		gap: 50px;
+		&__img {
+			width: 155px;
+			height: 225px;
+			margin: 0 20px 0 0;
+		}
+
+		&__genre {
+			margin: 0 0 12px 0;
+		}
+
+		&__price {
+			margin: 0 0 12px 0;
+		}
+	}
 }
 @media (max-width: 926px) {
 	.about-book {
@@ -56,6 +120,7 @@
 		right: 0;
 		left: 0;
 		padding: 20px 0 56px 0;
+		z-index: 99;
 		&__nav-wrapper {
 			display: none;
 			position: fixed;
@@ -69,6 +134,9 @@
 		}
 		&__button {
 			margin: 0;
+			&:hover {
+				transform: scale(1, 1);
+			}
 		}
 	}
 	.nav {
@@ -105,9 +173,76 @@
 			min-width: 209px;
 			margin: 0 27px 0 3px;
 		}
+		&__buy,
+		&__read {
+			&:hover {
+				transform: scale(1, 1);
+			}
+		}
 		&__img {
 			flex-basis: 100%;
 			min-height: 500px;
+		}
+	}
+	.products {
+		&__wrapper {
+			flex-direction: column;
+			align-items: center;
+			gap: 25px;
+		}
+
+		&__recommendations {
+			margin: 0 0 0 3px;
+		}
+
+		&__title {
+			text-align: center;
+		}
+
+		&__cards {
+			justify-content: center;
+		}
+
+		&__card {
+			width: 100%;
+			flex-direction: row;
+			&:nth-child(3),
+			&:nth-child(4),
+			&:nth-child(5),
+			&:nth-child(6) {
+				display: none;
+			}
+			&-top {
+				margin: 26px 0 0px 0;
+			}
+		}
+
+		&__top-month {
+			align-items: center;
+			justify-content: center;
+		}
+
+		&__button-best {
+			&:hover {
+				color: $btn-color;
+			}
+		}
+	}
+	.recom {
+		gap: 20px;
+	}
+	.icon {
+		&:hover {
+			transform: scale(1, 1);
+		}
+	}
+	.prod-top {
+		&__button {
+			&:hover {
+				border: 0px solid $text-color;
+				background: $text-color;
+				color: $primary;
+			}
 		}
 	}
 }
@@ -170,6 +305,143 @@
 
 		&__book {
 			width: 143px;
+		}
+	}
+	.products {
+		padding: 73px 0;
+		&__wrapper {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			gap: 58px;
+		}
+
+		&__recommendations {
+			width: 100%;
+			margin: 0;
+		}
+
+		&__title {
+			font-weight: bold;
+			font-size: 28px;
+			line-height: 36px;
+			text-align: center;
+			letter-spacing: 0.2px;
+		}
+
+		&__cards {
+			width: 100%;
+		}
+
+		&__card {
+			display: none;
+			flex-direction: column;
+			&:nth-child(1) {
+				display: flex;
+				margin: 42px 0 0 0;
+				padding: 10px 14px 31px 10px;
+			}
+			&-top {
+				margin: 36px 0 0 0;
+				&:first-child {
+					margin: 0;
+				}
+			}
+		}
+
+		&__button-more {
+			min-height: 44px;
+			font-size: 16px;
+			line-height: 20px;
+			text-transform: none;
+			&:hover {
+				background: rgba(21, 101, 216, 0.1);
+				color: $btn-color;
+			}
+		}
+
+		&__top-month {
+			min-width: 290px;
+			margin: 0;
+		}
+
+		&__button-best {
+			padding: 20px 0 0 0;
+			margin: 40px 0 0 0;
+		}
+	}
+	.title-mb-2 {
+		margin: 0 0 36px 0;
+	}
+	.recom {
+		&__img {
+			position: relative;
+			top: -34px;
+			width: 95px;
+			height: 137px;
+			margin: 0;
+			border-radius: 4px;
+		}
+
+		&__title {
+			width: 100%;
+			font-family: Roboto;
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 24px;
+			text-align: center;
+			letter-spacing: 0.2px;
+			margin: -16px 0px 0px 3px;
+		}
+
+		&__genre {
+			font-size: 14px;
+			line-height: 20px;
+			text-align: center;
+			margin: 12px 1px 12px 5px;
+		}
+
+		&__price {
+			font-size: 15px;
+			line-height: 20px;
+			margin: 4px 0 20px -6px;
+		}
+
+		&__wrapper {
+			align-items: center;
+		}
+
+		&__button {
+			min-width: 115px;
+			font-size: 16px;
+			line-height: 22px;
+			margin: 0 20px 0 0;
+		}
+	}
+	.icon {
+		width: 20px;
+		height: 20px;
+		transition: transform 0.5s;
+		&:hover {
+			transition: transform 0.5s;
+			transform: scale(1.2, 1.2);
+		}
+	}
+	.prod-top {
+		width: 100%;
+		padding: 26px 15px 20px 15px;
+		&__img {
+			width: 95px;
+			height: 142px;
+			margin: 0 14px 0 0;
+		}
+
+		&__title {
+			font-family: Roboto Condensed;
+			font-weight: bold;
+			font-size: 16px;
+			line-height: 24px;
+			margin: 0 0 12px 0;
 		}
 	}
 }

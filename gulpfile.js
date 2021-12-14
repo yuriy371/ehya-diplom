@@ -164,6 +164,19 @@ function fonts() {
         .pipe(dest(path.build.fonts));
 };
 
+function svgSpriteGen() {
+    return gulp.src([source_folder + "/iconsprite/*.svg"])
+        .pipe(svgSprite({
+            mode: {
+                stack: {
+                    sprite: "../icons/sprite.svg"
+                    // example: true
+                }
+            },
+        }))
+        .pipe(dest(path.build.img))
+}
+
 gulp.task("otf2ttf", function () {
     return src([source_folder + "/fonts/*.otf"])
         .pipe(fonter({
@@ -172,18 +185,18 @@ gulp.task("otf2ttf", function () {
         .pipe(dest(source_folder + "/fonts/"));
 });
 
-gulp.task("svgSprite", function () {
-    return gulp.src([source_folder + "/iconsprite/*.svg"])
-        .pipe(svgSprite({
-            mode: {
-                stack: {
-                    sprite: "../icons/icons.svg"
-                    // example: true
-                }
-            },
-        }))
-        .pipe(dest(path.build.img))
-});
+// gulp.task("svgSprite", function () {
+//     return gulp.src([source_folder + "/iconsprite/*.svg"])
+//         .pipe(svgSprite({
+//             mode: {
+//                 stack: {
+//                     sprite: "../icons/sprite.svg"
+//                     // example: true
+//                 }
+//             },
+//         }))
+//         .pipe(dest(path.build.img))
+// });
 
 function fontsStyle(params) {
     let file_content = fs.readFileSync(source_folder + '/scss/fonts.scss');
@@ -221,9 +234,10 @@ function clean(params) {
     return del(path.clean);
 };
 
-let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts, favicon), fontsStyle);
+let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts, favicon, svgSpriteGen), fontsStyle);
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
+exports.favicon = svgSpriteGen;
 exports.favicon = favicon;
 exports.fontsStyle = fontsStyle;
 exports.fonts = fonts;
