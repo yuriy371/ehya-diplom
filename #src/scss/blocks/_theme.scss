@@ -1,9 +1,3 @@
-.line {
-	& hr {
-		height: 1px;
-		background: #eceef2;
-	}
-}
 .theme {
 	position: relative;
 	padding: 60px 0 100px 0;
@@ -66,4 +60,10 @@
 }
 .theme-button-next {
 	right: -25px;
+}
+.line {
+	& hr {
+		height: 1px;
+		background: #eceef2;
+	}
 }
