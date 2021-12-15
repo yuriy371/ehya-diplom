@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="css/style.min.css">
 	<!-- Script -->
 	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer></script>
-	<script src="js/index.min.js" defer></script>
+	<script src="js/index.js" defer></script>
 </head>
 
 <body>
@@ -364,7 +364,7 @@
 							<svg class="icon">
 								<use xlink:href="img/icons/sprite.svg#diamond"></use>
 							</svg>
-							<h3 class="theme__title">Самомотиватия</h3>
+							<h3 class="theme__title theme__title-mb-3">Самомотиватия</h3>
 							<span class="theme__sub-title">Книги о мотивации</span>
 						</div>
 						<div class="swiper-slide theme__item">
@@ -384,30 +384,31 @@
 						<div class="swiper-slide theme__item">
 							<svg class="icon">
 								<use xlink:href="img/icons/sprite.svg#book"></use>
+							</svg>
+							<h3 class="theme__title">Романы Теленовеллы</h3>
+							<span class="theme__sub-title">Книги с крутыми историями</span>
+
+						</div>
+						<div class="swiper-slide theme__item"><svg class="icon">
+								<use xlink:href="img/icons/sprite.svg#square"></use>
+							</svg>
+							<h3 class="theme__title">Навыки будущего</h3>
+							<span class="theme__sub-title">Книги для самоподготовки</span>
+
+						</div>
+						<div class="swiper-slide theme__item">
+							<svg class="icon">
+								<use xlink:href="img/icons/sprite.svg#graph"></use>
 							</svg>
 							<h3 class="theme__title">Бизнес & Финансы</h3>
 							<span class="theme__sub-title">Книги про мир бизнеса</span>
 						</div>
 						<div class="swiper-slide theme__item">
 							<svg class="icon">
-								<use xlink:href="img/icons/sprite.svg#square"></use>
-							</svg>
-							<h3 class="theme__title">Самомотиватия</h3>
-							<span class="theme__sub-title">Книги о мотивации</span>
-						</div>
-						<div class="swiper-slide theme__item">
-							<svg class="icon">
-								<use xlink:href="img/icons/sprite.svg#graph"></use>
-							</svg>
-							<h3 class="theme__title">Романы Теленовеллы</h3>
-							<span class="theme__sub-title">Книги с крутыми историями</span>
-						</div>
-						<div class="swiper-slide theme__item">
-							<svg class="icon">
 								<use xlink:href="img/icons/sprite.svg#diamond"></use>
 							</svg>
-							<h3 class="theme__title">Навыки будущего</h3>
-							<span class="theme__sub-title">Книги для самоподготовки</span>
+							<h3 class="theme__title theme__title-mb-3">Самомотиватия</h3>
+							<span class="theme__sub-title">Книги о мотивации</span>
 						</div>
 					</div>
 				</div>
@@ -430,6 +431,57 @@
 		<!-- /.container -->
 	</section>
 	<!-- /.theme -->
+	<section class="unpublished">
+		<div class="container">
+			<div class="unpublished__wrapper-slider">
+				<h2 class="unpublished__title">
+					Неизданные книги
+				</h2>
+				<div class="swiper unpublished__slider">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper unpublished__wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide unpublished__item">
+							<img src="./img/img-book/unpublished-books-img-1.png" alt="" class="unpublished__img">
+						</div>
+						<div class="swiper-slide unpublished__item">
+							<img src="./img/img-book/unpublished-books-img-2.png" alt="" class="unpublished__img">
+						</div>
+						<div class="swiper-slide unpublished__item">
+							<img src="./img/img-book/unpublished-books-img-3.png" alt="" class="unpublished__img">
+						</div>
+						<div class="swiper-slide unpublished__item">
+							<img src="./img/img-book/unpublished-books-img-4.png" alt="" class="unpublished__img">
+						</div>
+						<div class="swiper-slide unpublished__item">
+							<img src="./img/img-book/unpublished-books-img-5.png" alt="" class="unpublished__img">
+						</div>
+						<div class="swiper-slide unpublished__item">
+							<img src="./img/img-book/unpublished-books-img-1.png" alt="" class="unpublished__img">
+						</div>
+						<div class="swiper-slide unpublished__item">
+							<img src="./img/img-book/unpublished-books-img-2.png" alt="" class="unpublished__img">
+						</div>
+					</div>
+
+				</div>
+				<!-- If we need navigation buttons -->
+				<button class="unpublished-slider unpublished-slider-button-prev ">
+					<svg class="icon">
+						<use xlink:href="img/icons/sprite.svg#arrow-left"></use>
+					</svg>
+				</button>
+				<button class="unpublished-slider unpublished-slider-button-next">
+					<svg class="icon">
+						<use xlink:href="img/icons/sprite.svg#arrow-right"></use>
+					</svg>
+				</button>
+			</div>
+			<!-- /.unpublished__wrapper-slider -->
+		</div>
+	</section>
+	<!-- /.unpublished -->
+
 </body>
 
 </html>

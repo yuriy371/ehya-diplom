@@ -46,6 +46,9 @@
 			height: 16px;
 		}
 	}
+	.theme {
+		padding: 56px 0 139px 0;
+	}
 	.theme-button-prev {
 		left: 50%;
 		transform: translate(-50%, 0);
@@ -139,7 +142,7 @@
 		top: 0;
 		right: 0;
 		left: 0;
-		padding: 20px 0 56px 0;
+		padding: 20px 0 35px 0;
 		z-index: 99;
 		&-wrapper {
 			margin: 0 8px;
@@ -149,7 +152,7 @@
 			position: fixed;
 			right: 0;
 			left: 0;
-			top: 100px;
+			top: 80px;
 			bottom: 0;
 			flex-direction: column;
 			background: $text-color;
@@ -190,7 +193,7 @@
 		}
 		&__info {
 			flex-basis: 100%;
-			margin: 0 0px 50px 0;
+			margin: 0 0px 30px 0;
 		}
 		&__buy {
 			min-width: 209px;
@@ -204,10 +207,11 @@
 		}
 		&__img {
 			flex-basis: 100%;
-			min-height: 500px;
+			min-height: 450px;
 		}
 	}
 	.products {
+		padding: 60px 0 79px 0;
 		&__wrapper {
 			flex-direction: column;
 			align-items: center;
@@ -223,12 +227,14 @@
 		}
 
 		&__cards {
-			justify-content: center;
 		}
 
 		&__card {
-			width: 100%;
+			width: 47%;
 			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			text-align: center;
 			&:nth-child(3),
 			&:nth-child(4),
 			&:nth-child(5),
@@ -236,7 +242,10 @@
 				display: none;
 			}
 			&-top {
-				margin: 26px 0 0px 0;
+				margin: 0px 0 0px 0;
+				&:first-child {
+					margin: 0 9px 0 0;
+				}
 			}
 		}
 
@@ -253,13 +262,28 @@
 	}
 	.recom {
 		gap: 20px;
-	}
-	.icon {
-		&:hover {
-			transform: scale(1, 1);
+		&__img {
+			margin: 0 0 20px 0;
+		}
+		&__like-btn {
+			& .icon {
+				&:hover {
+					transform: scale(1, 1);
+				}
+			}
 		}
 	}
 	.prod-top {
+		flex-direction: row;
+		justify-content: space-around;
+		padding: 15px;
+		gap: 10px;
+		&__img {
+			margin: 0 10px 0 0;
+		}
+		&__title {
+			font-size: 16px;
+		}
 		&__button {
 			&:hover {
 				border: 0px solid $text-color;
@@ -267,6 +291,8 @@
 				color: $primary;
 			}
 		}
+	}
+	.theme {
 	}
 }
 @media (max-width: 576px) {
@@ -322,8 +348,12 @@
 			text-align: center;
 		}
 
+		&__info {
+			margin: 0px 0 36px 0;
+		}
+
 		&__img {
-			min-height: 301px;
+			min-height: 332px;
 		}
 
 		&__book {
@@ -331,7 +361,7 @@
 		}
 	}
 	.products {
-		padding: 73px 0 56px 0;
+		padding: 56px 0 56px 0;
 		&__wrapper {
 			display: flex;
 			align-items: center;
@@ -354,11 +384,13 @@
 
 		&__cards {
 			width: 100%;
+			justify-content: center;
 		}
 
 		&__card {
 			display: none;
 			flex-direction: column;
+			width: 100%;
 			&:nth-child(1) {
 				display: flex;
 				margin: 42px 0 0 0;
@@ -452,7 +484,9 @@
 	}
 	.prod-top {
 		width: 100%;
+		flex-direction: column;
 		padding: 26px 15px 20px 15px;
+		gap: 0px;
 		&__img {
 			width: 95px;
 			height: 142px;
@@ -466,9 +500,15 @@
 			line-height: 24px;
 			margin: 0 0 12px 0;
 		}
+		&__price {
+			margin: 0 0 14px 0;
+		}
+		&__button {
+			margin: 0 0 0 0;
+		}
 	}
 	.theme {
-		padding: 56px 0 100px 0;
+		padding: 56px 0 139px 0;
 		&__slider {
 			margin: 0 !important;
 		}
@@ -493,6 +533,9 @@
 			line-height: 20px;
 			margin: 0 0 10px 0;
 			word-wrap: break-word;
+			&-mb-3 {
+				margin: 0 0 30px 0;
+			}
 		}
 
 		&__sub-title {
@@ -520,6 +563,34 @@
 		transform: translate(50%, 0);
 		margin: 0px -29px 0 0px;
 	}
+	.unpublished {
+		padding: 48px 0 135px 0;
+
+		&__title {
+			font-size: 28px;
+			line-height: 36px;
+			text-align: center;
+			margin: 0 0 42px 3px;
+		}
+	}
+	.unpublished-slider {
+		top: 110%;
+		width: 48px;
+		height: 48px;
+		& .icon {
+			height: 16px;
+		}
+	}
+	.unpublished-slider-button-prev {
+		left: 49%;
+		transform: translate(-50%, 0);
+		margin: 0 0 0 -30px;
+	}
+	.unpublished-slider-button-next {
+		right: 49%;
+		transform: translate(50%, 0);
+		margin: 0 -30px 0 0;
+	}
 }
 @media (max-width: 480px) and (min-width: 320px) {
 	.container {
@@ -527,7 +598,6 @@
 		padding: 0 7px;
 	}
 	.header {
-		padding: 20px 0 56px 0;
 		&__logo {
 			margin: -2px 0px 0 -5px;
 		}
@@ -539,6 +609,21 @@
 
 		&__buy {
 			margin: 0;
+		}
+	}
+	.unpublished {
+		padding: 48px 0 135px 0;
+
+		&__title {
+			font-size: 28px;
+			line-height: 36px;
+			text-align: center;
+			margin: 0 0 42px 3px;
+		}
+
+		&__slider {
+			width: 205px;
+			height: 300px;
 		}
 	}
 }

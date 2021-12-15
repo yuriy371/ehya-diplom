@@ -133,10 +133,14 @@
 		& .icon {
 			width: 20px;
 			height: 20px;
+			fill: #959ead;
 			transition: transform 0.5s;
 			&:hover {
 				transition: transform 0.5s;
 				transform: scale(1.2, 1.2);
+			}
+			&.active {
+				fill: red;
 			}
 		}
 	}

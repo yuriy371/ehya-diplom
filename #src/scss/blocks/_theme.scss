@@ -1,12 +1,17 @@
 .theme {
 	position: relative;
-	padding: 60px 0 100px 0;
+	padding: 60px 0 99px 0;
 	&__wrapper-slider {
 		position: relative;
 	}
 
 	&__slider {
 		margin: 0 4px 0 2px !important;
+	}
+
+	&__wrapper {
+		// display: flex;
+		// overflow: hidden;
 	}
 
 	&__item {
