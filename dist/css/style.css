@@ -1103,6 +1103,10 @@ button {
   background: #eceef2;
 }
 
+.theme-button-disabled {
+  display: none;
+}
+
 .unpublished {
   padding: 62px 0 80px 0;
   background: #183b56;
@@ -1580,6 +1584,92 @@ button {
   color: #183b56;
 }
 
+.newsletter {
+  padding: 0 0 50px 0;
+}
+
+.newsletter__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 60px 63px 80px 60px;
+  background: url("../img/img-blog/bg-form.png") no-repeat;
+  background-size: cover;
+  border-radius: 12px;
+  margin: 0px 3px 0 3px;
+}
+
+.newsletter__title {
+  width: 393px;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+  margin: 0 10px 0 0;
+}
+
+.newsletter__form {
+  position: relative;
+  margin: 20px 0 0 0;
+  max-width: 447px;
+}
+
+.newsletter__form .icon {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  width: 15px;
+  height: 18px;
+  -webkit-transform: translate(-10%, -50%);
+      -ms-transform: translate(-10%, -50%);
+          transform: translate(-10%, -50%);
+  z-index: 10;
+}
+
+.newsletter__input {
+  width: 100%;
+  height: 56px;
+  border: 1px solid #c3cad9;
+  border-radius: 8px;
+  padding: 0 175px 0 48px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.newsletter__btn {
+  position: absolute;
+  right: 1%;
+  top: 7%;
+  min-width: 163px;
+  padding: 0 5px;
+  height: 48px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  background: #faad13;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+label.invalid {
+  position: absolute;
+  width: 100%;
+  top: 105%;
+  left: 0;
+  color: red;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 1140px;
@@ -1834,6 +1924,9 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 0 0 48px 0;
   }
 
@@ -1843,6 +1936,8 @@ button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -ms-flex-preferred-size: min-content;
+        flex-basis: min-content;
   }
 
   .blog__other-img {
@@ -1858,6 +1953,10 @@ button {
     margin: 0 0 10px 0;
     width: 225px;
     font-size: 18px;
+  }
+
+  .newsletter__wrapper {
+    padding: 60px 30px 80px;
   }
 }
 
@@ -2251,6 +2350,19 @@ button {
 
   .blog__link-read:hover {
     color: #1565d8;
+  }
+
+  .newsletter__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 30px 30px 40px;
+  }
+
+  .newsletter__title {
+    margin: 0;
+    width: 100%;
   }
 }
 
@@ -2836,6 +2948,59 @@ button {
     letter-spacing: 0.125px;
     margin: -4px 0 0 0;
   }
+
+  .newsletter__bg-mobile {
+    background: url("../img/img-blog/bg-form-mobile.png") no-repeat;
+    background-size: cover;
+  }
+
+  .newsletter__wrapper {
+    padding: 26px 0 28px 0;
+    background: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 24px 6px 28px;
+  }
+
+  .newsletter__title {
+    width: 100%;
+    margin: 0;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.2px;
+    margin: 0 0 12px 0;
+  }
+
+  .newsletter__form {
+    width: 100%;
+    height: 112px;
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #c3cad9;
+  }
+
+  .newsletter__form .icon {
+    top: 25%;
+    left: 6%;
+  }
+
+  .newsletter__input {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 0 10px 0 48px;
+    border: none;
+  }
+
+  .newsletter__btn {
+    width: 92%;
+    height: 42px;
+    font-size: 16px;
+    line-height: 22px;
+    top: 52%;
+    left: 4%;
+  }
 }
 
 @media (max-width: 480px) and (min-width: 320px) {
@@ -2904,4 +3069,16 @@ button {
        object-fit: cover;
     border-radius: 4px;
   }
+
+  .newsletter__form .icon {
+    top: 25%;
+    left: 8%;
+  }
+}
+
+.webp .newsletter__wrapper{ background: url(../img/img-blog/bg-form.webp) no-repeat; }
+
+@media (max-width: 576px){
+
+  .webp .newsletter__bg-mobile{ background: url(../img/img-blog/bg-form-mobile.webp) no-repeat; }
 }

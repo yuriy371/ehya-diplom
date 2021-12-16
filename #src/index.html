@@ -20,6 +20,9 @@
 	<link rel="stylesheet" href="css/style.min.css">
 	<!-- Script -->
 	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" defer></script>
 	<script src="js/index.js" defer></script>
 </head>
 
@@ -414,7 +417,7 @@
 				</div>
 				<!-- /.theme__wrapper -->
 				<!-- If we need navigation buttons -->
-				<button class="slider-button theme-button-prev">
+				<button class="slider-button theme-button-prev theme-button-disabled">
 					<svg class="icon">
 						<use xlink:href="img/icons/sprite.svg#arrow-left"></use>
 					</svg>
@@ -777,6 +780,31 @@
 		<!-- /.container -->
 	</section>
 	<!-- /.blog -->
+	<section class="newsletter">
+		<div class="newsletter__bg-mobile">
+			<div class="container">
+				<div class="newsletter__wrapper">
+					<h2 class="newsletter__title">
+						Будь первым, кто&nbsp;узнает
+						о&nbsp;наших&nbsp;акциях
+					</h2>
+					<form action="#" method="post" class="newsletter__form form">
+						<svg class="icon">
+							<use xlink:href="img/icons/sprite.svg#email"></use>
+						</svg>
+						<input type="email" name="email" required placeholder="Ваш Emaill" class="newsletter__input">
+						<button class="newsletter__btn">
+							Регистрация
+						</button>
+					</form>
+				</div>
+				<!-- /.newsletter__wrapper -->
+			</div>
+			<!-- /.container -->
+		</div>
+		<!-- /.newsletter__bg-mobile -->
+	</section>
+	<!-- /.newsletter -->
 </body>
 
 </html>

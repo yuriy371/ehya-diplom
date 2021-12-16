@@ -1,0 +1,74 @@
+.newsletter {
+	padding: 0 0 50px 0;
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 60px 63px 80px 60px;
+		background: url("../img/img-blog/bg-form.png") no-repeat;
+		background-size: cover;
+		border-radius: 12px;
+		margin: 0px 3px 0 3px;
+	}
+
+	&__title {
+		width: 393px;
+		font-family: Roboto Condensed;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 36px;
+		line-height: 48px;
+		letter-spacing: 0.2px;
+		color: $primary;
+		margin: 0 10px 0 0;
+	}
+
+	&__form {
+		position: relative;
+		margin: 20px 0 0 0;
+		max-width: 447px;
+		& .icon {
+			position: absolute;
+			top: 50%;
+			left: 5%;
+			width: 15px;
+			height: 18px;
+			transform: translate(-10%, -50%);
+			z-index: 10;
+		}
+	}
+
+	&__input {
+		width: 100%;
+		height: 56px;
+		border: 1px solid #c3cad9;
+		border-radius: 8px;
+		padding: 0 175px 0 48px;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	&__btn {
+		position: absolute;
+		right: 1%;
+		top: 7%;
+		min-width: 163px;
+		padding: 0 5px;
+		height: 48px;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 22px;
+		text-align: center;
+		background: #faad13;
+		border-radius: 4px;
+		color: $primary;
+	}
+}
+label.invalid {
+	position: absolute;
+	width: 100%;
+	top: 105%;
+	left: 0;
+	color: red;
+}

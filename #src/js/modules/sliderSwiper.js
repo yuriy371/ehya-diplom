@@ -1,6 +1,7 @@
 const sliderSwiper = () => {
 	new Swiper(".theme__slider", {
 		navigation: {
+			disabledClass: "theme-button-disabled",
 			nextEl: '.theme-button-next',
 			prevEl: '.theme-button-prev',
 		},

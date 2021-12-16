@@ -10,8 +10,6 @@
 	}
 
 	&__wrapper {
-		// display: flex;
-		// overflow: hidden;
 	}
 
 	&__item {
@@ -71,4 +69,7 @@
 		height: 1px;
 		background: #eceef2;
 	}
+}
+.theme-button-disabled {
+	display: none;
 }
