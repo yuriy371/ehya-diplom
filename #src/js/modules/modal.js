@@ -1,5 +1,3 @@
-import $ from "swiper/shared/dom";
-
 const modal = () => {
 	let modalBtn = $("[data-toggle=modal]");
 	let closeModalBtn = $(".modal__close");

@@ -1,4 +1,4 @@
-const modileMenu = (e, targ) => {
+const mobileMenu = (e, targ) => {
     let menuMob = document.querySelector(".header__nav-wrapper")
 
     if (targ.closest(".menu-button")) {
@@ -7,4 +7,4 @@ const modileMenu = (e, targ) => {
     }
 }
 
-export default modileMenu
+export default mobileMenu

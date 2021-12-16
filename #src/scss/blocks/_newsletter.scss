@@ -69,11 +69,13 @@
 			color: #faad13;
 		}
 	}
+	& label.invalid {
+		position: absolute;
+		width: 100%;
+		top: 105%;
+		left: 0;
+	}
 }
 label.invalid {
-	position: absolute;
-	width: 100%;
-	top: 105%;
-	left: 0;
 	color: red;
 }

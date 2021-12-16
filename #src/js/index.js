@@ -1,4 +1,4 @@
-import modileMenu from "./modules/modileMenu"
+import mobileMenu from "./modules/mobileMenu"
 import like from "./modules/like"
 import sliderSwiper from "./modules/sliderSwiper"
 import sliderUnpub from "./modules/sliderUnpub"
@@ -11,12 +11,12 @@ document.addEventListener("click", (e) => {
 
 	like(e, targ)
 	valid()
-	modal()
-	modileMenu(e, targ)
+
+	mobileMenu(e, targ)
 });
 
 sliderSwiper()
 sliderUnpub()
-
+modal()
 scrollTop()
 // document.body.contentEditable = true
