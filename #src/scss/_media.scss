@@ -1,6 +1,7 @@
 @media (max-width: 1200px) {
 	.container {
 		max-width: 1140px;
+		padding: 0 20px;
 	}
 	.about-book {
 		&__buy {
@@ -62,6 +63,39 @@
 	.author {
 		&__wrapper {
 			padding: 0 10px;
+		}
+	}
+	.blog {
+		&__wrapper {
+			justify-content: space-between;
+		}
+
+		&__main {
+			flex-basis: 100%;
+		}
+
+		&__main-img {
+			width: 100%;
+		}
+
+		&__text {
+			width: 100%;
+		}
+
+		&__other {
+			flex-basis: 100%;
+		}
+
+		&__button {
+			margin: 9px 3px 44px 0;
+		}
+
+		&__date {
+			margin: 0 0 10px 0;
+		}
+
+		&__title-other {
+			margin: 0 0 10px 0;
 		}
 	}
 }
@@ -140,6 +174,65 @@
 			&:last-child {
 				display: none;
 			}
+		}
+	}
+	.blog {
+		&__wrapper {
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		&__main {
+			flex-basis: 100%;
+			margin: 0;
+		}
+
+		&__main-news {
+			display: flex;
+			flex-direction: row;
+		}
+
+		&__main-info {
+			flex-basis: 50%;
+			margin: 0 0 0 20px;
+		}
+
+		&__main-img {
+			margin: 0;
+		}
+
+		&__text {
+			width: 100%;
+		}
+
+		&__button {
+			order: 1;
+			margin: 0 auto;
+		}
+
+		&__other-news {
+			flex-direction: row;
+			margin: 0 0 48px 0;
+		}
+
+		&__item {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		&__other-img {
+			width: 225px;
+			margin: 0 0 10px 0;
+		}
+
+		&__date {
+			margin: 0 0 10px 0;
+		}
+
+		&__title-other {
+			margin: 0 0 10px 0;
+			width: 225px;
+			font-size: 18px;
 		}
 	}
 }
@@ -245,9 +338,6 @@
 
 		&__title {
 			text-align: center;
-		}
-
-		&__cards {
 		}
 
 		&__card {
@@ -374,7 +464,85 @@
 			&:last-child {
 				display: flex;
 			}
-			& .icon {
+		}
+	}
+	.blog {
+		padding: 70px 0;
+		&__wrapper {
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+
+		&__main {
+			flex-basis: 100%;
+		}
+
+		&__main-news {
+			display: block;
+		}
+
+		&__main-info {
+			margin: 0;
+		}
+
+		&__main-img {
+			height: 350px;
+			object-fit: cover;
+			margin: 0 0 20px 0;
+		}
+
+		&__title-news {
+			margin: 0 0 16px 0;
+		}
+
+		&__text {
+			width: 100%;
+			margin: 0;
+		}
+
+		&__other {
+			flex-basis: 100%;
+			align-items: flex-start;
+		}
+
+		&__button {
+			margin: 0 auto;
+			order: 1;
+			&:hover {
+				background: $primary;
+				color: $btn-color;
+			}
+		}
+
+		&__other-news {
+			flex-direction: column;
+			margin: 0 0 48px 0;
+		}
+
+		&__item {
+			flex-wrap: nowrap;
+			justify-content: flex-start;
+			&:last-child {
+				display: flex;
+			}
+		}
+
+		&__other-img {
+			margin: 0 20px 0 0;
+		}
+
+		&__date {
+			margin: 0 0 10px 0;
+		}
+
+		&__title-other {
+			width: 100%;
+			margin: 0 0 10px 0;
+		}
+
+		&__link-read {
+			&:hover {
+				color: $btn-color;
 			}
 		}
 	}
@@ -748,8 +916,6 @@
 			top: 100%;
 			right: 50%;
 			transform: translate(50%, 72%);
-			& .icon {
-			}
 		}
 	}
 	.publisher {
@@ -765,19 +931,102 @@
 			width: 442px;
 			justify-content: center;
 			margin: 0 auto;
-			&:last-child {
-			}
 		}
 
 		&__item {
 			width: 127px;
 			margin: 0 0 24px 0;
-			&:last-child {
-			}
 			& .icon {
 				width: 98px;
 				height: 28px;
 			}
+		}
+	}
+	.blog {
+		padding: 56px 0 48px 0;
+		&__wrapper {
+			flex-wrap: wrap;
+			gap: 26px;
+		}
+
+		&__main {
+			width: 100%;
+		}
+
+		&__title-blog {
+			font-size: 28px;
+			line-height: 36px;
+			text-align: center;
+			letter-spacing: 0.2px;
+			margin: 0 0 48px 0;
+		}
+
+		&__main-img {
+			margin: 0 0 20px 0;
+			height: 190px;
+			object-fit: cover;
+		}
+
+		&__title-news {
+			margin: 0 0 10px 0;
+			font-size: 16px;
+			line-height: 20px;
+			letter-spacing: 0.2px;
+		}
+
+		&__text {
+			width: 100%;
+			margin: 0;
+			font-size: 12px;
+			line-height: 24px;
+		}
+
+		&__other {
+			align-items: flex-start;
+		}
+
+		&__button {
+			width: 159px;
+			order: 1;
+			font-size: 14px;
+			line-height: 20px;
+			margin: 0 auto;
+		}
+
+		&__other-news {
+			gap: 27px;
+			margin: 0 0 36px 0;
+		}
+
+		&__item {
+			margin: 0 0 0 6px;
+		}
+
+		&__other-img {
+			width: 90px;
+			height: 90px;
+			object-fit: cover;
+			margin: 0 20px 0 0;
+			border-radius: 4px;
+		}
+
+		&__date {
+			font-size: 10px;
+			line-height: 20px;
+			margin: 3px 0 6px 0;
+		}
+
+		&__title-other {
+			font-size: 14px;
+			line-height: 20px;
+			letter-spacing: 0.175px;
+		}
+
+		&__link-read {
+			font-size: 10px;
+			line-height: 20px;
+			letter-spacing: 0.125px;
+			margin: -4px 0 0 0;
 		}
 	}
 }
@@ -835,8 +1084,18 @@
 		&__items {
 			width: 100%;
 			justify-content: center;
-			&:last-child {
-			}
+		}
+	}
+	.blog {
+		&__main-news {
+			margin: 0 0 0 5px;
+		}
+
+		&__main-img {
+			height: 120px;
+			margin: 0 0 20px 0;
+			object-fit: cover;
+			border-radius: 4px;
 		}
 	}
 }

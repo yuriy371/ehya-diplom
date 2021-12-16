@@ -1,0 +1,129 @@
+.blog {
+	padding: 100px 0;
+	&__wrapper {
+		display: flex;
+		align-items: flex-start;
+		gap: 30px;
+	}
+
+	&__main {
+		margin: 0 0 0 4px;
+	}
+
+	&__title-blog {
+		font-family: Roboto Condensed;
+		font-weight: bold;
+		font-size: 48px;
+		line-height: 60px;
+		letter-spacing: 0.2px;
+		margin: 0 0 40px 0;
+	}
+
+	&__main-news {
+	}
+
+	&__main-info {
+	}
+
+	&__main-img {
+		margin: 0 0 31px 0;
+		border-radius: 8px;
+	}
+
+	&__title-news {
+		font-family: Roboto Condensed;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 32px;
+		letter-spacing: 0.2px;
+		margin: 0 0 16px 10px;
+	}
+
+	&__text {
+		width: 536px;
+		font-size: 18px;
+		line-height: 32px;
+		color: $description-color;
+		margin: 0 0 0 10px;
+	}
+
+	&__other {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
+	&__button {
+		width: 179px;
+		height: 44px;
+		background: none;
+		border: 2px solid $btn-color;
+		border-radius: 22px;
+		font-family: Roboto Condensed;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 20px;
+		text-align: center;
+		letter-spacing: 0.2px;
+		color: $btn-color;
+		margin: 9px 3px 48px 0;
+		transition: background 0.5s, color 0.5s;
+		&:hover {
+			background: $btn-color;
+			color: $primary;
+		}
+	}
+
+	&__other-news {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+	}
+
+	&__other-img {
+		margin: 0 36px 0 0;
+		border-radius: 8px;
+	}
+
+	&__news-info {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__date {
+		font-size: 14px;
+		line-height: 20px;
+		color: $description-color;
+		text-transform: uppercase;
+		margin: 0 0 16px 0;
+	}
+
+	&__title-other {
+		font-family: Roboto;
+		font-weight: 500;
+		font-size: 22px;
+		line-height: 32px;
+		letter-spacing: 0.2px;
+		margin: 0 0 18px 0;
+		overflow: hidden;
+	}
+
+	&__link-read {
+		font-family: Roboto Condensed;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 20px;
+		letter-spacing: 0.2px;
+		color: $btn-color;
+		text-transform: uppercase;
+		transition: color 0.5s;
+		&:hover {
+			color: $text-color;
+		}
+	}
+}
