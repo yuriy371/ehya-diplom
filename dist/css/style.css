@@ -479,6 +479,10 @@ body {
   background: #ffffff;
 }
 
+.body__hidden {
+  overflow: hidden;
+}
+
 .button {
   border-radius: 8px;
   background: none;
@@ -888,12 +892,14 @@ button {
 }
 
 .recom__genre {
+  width: 120px;
   font-size: 16px;
   line-height: 22px;
   margin: 0 0 24px 0;
 }
 
 .recom__price {
+  width: 120px;
   margin: 0 0 24px 0;
 }
 
@@ -1002,7 +1008,8 @@ button {
 .recom__button,
 .prod-top__button {
   min-width: 101px;
-  height: 36px;
+  max-width: 108px;
+  min-height: 36px;
   padding: 0px 10px;
   border-radius: 50px;
   background: #183b56;
@@ -1051,7 +1058,7 @@ button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 8px;
-  padding: 40px 0 30px 0;
+  padding: 40px 5px 30px;
 }
 
 .theme__item .icon {
@@ -1353,6 +1360,7 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  max-width: 290px;
   font-family: Roboto;
   font-weight: 500;
   font-size: 22px;
@@ -1362,6 +1370,8 @@ button {
 }
 
 .author__subtitle {
+  display: block;
+  max-width: 290px;
   font-size: 16px;
   line-height: 22px;
 }
@@ -1669,9 +1679,17 @@ button {
   font-size: 16px;
   line-height: 22px;
   text-align: center;
-  background: #faad13;
   border-radius: 4px;
+  background: #faad13;
   color: #ffffff;
+  -webkit-transition: background 0.5s, color 0.5s;
+  -o-transition: background 0.5s, color 0.5s;
+  transition: background 0.5s, color 0.5s;
+}
+
+.newsletter__btn:hover {
+  background: #183b56;
+  color: #faad13;
 }
 
 label.invalid {
@@ -1750,6 +1768,7 @@ label.invalid {
 }
 
 .footer__title {
+  max-width: 120px;
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
@@ -1757,6 +1776,7 @@ label.invalid {
 }
 
 .footer__item {
+  max-width: 120px;
   font-size: 16px;
   line-height: 22px;
   margin: 0 0 24px 0;
@@ -1808,6 +1828,188 @@ label.invalid {
   font-size: 16px;
   line-height: 22px;
   text-align: center;
+}
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 143, 223, 0.39);
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 478px;
+  max-height: 96%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 33px 88px 33px 88px;
+  background: #183b56;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 101;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__close {
+  position: absolute;
+  top: 17px;
+  right: 17px;
+  width: 26px;
+  height: 26px;
+}
+
+.modal__close::after,
+.modal__close::before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 2px;
+  background: #ffffff;
+}
+
+.modal__close::after {
+  top: 50%;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.modal__close::before {
+  top: 50%;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.modal__title {
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 15px 0px;
+}
+
+.modal__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #ffffff;
+}
+
+.modal__input {
+  min-width: 300px;
+  height: 50px;
+  margin: 15px 0 0px 0;
+}
+
+.modal__message {
+  height: 123px;
+  resize: none;
+  margin: 15px 0 0px 0;
+}
+
+.modal__wrapper-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 15px 0 0px 0;
+}
+
+.modal__button {
+  min-width: 160px;
+  height: 50px;
+  padding: 0 10px;
+  font-weight: bold;
+  font-size: 12px;
+  background: #1565d8;
+  color: #ffffff;
+}
+
+.modal__info {
+  margin: 10px 0 0 0;
+  font-weight: bold;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.modal__input,
+.modal__message {
+  padding: 18px 23px;
+  border-radius: 4px;
+}
+
+.input {
+  font-size: 12px;
+}
+
+.up {
+  position: fixed;
+  display: none;
+  bottom: 15px;
+  right: 15px;
+  background: #183b56;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 99;
+}
+
+.up.view {
+  display: block;
+}
+
+.up .icon {
+  width: 30px;
+  height: 30px;
+  fill: #ffffff;
 }
 
 @media (max-width: 1200px) {
@@ -2530,6 +2732,11 @@ label.invalid {
     width: 100%;
   }
 
+  .newsletter__btn:hover {
+    background: #faad13;
+    color: #ffffff;
+  }
+
   .footer {
     padding: 58px 0 40px 0;
   }
@@ -2592,6 +2799,11 @@ label.invalid {
 
   .footer .more {
     grid-row: 2;
+  }
+
+  .up .icon {
+    width: 20px;
+    height: 20px;
   }
 }
 
@@ -2776,6 +2988,7 @@ label.invalid {
   }
 
   .recom__genre {
+    width: 100%;
     font-size: 14px;
     line-height: 20px;
     text-align: center;
@@ -2783,6 +2996,7 @@ label.invalid {
   }
 
   .recom__price {
+    width: 100%;
     font-size: 15px;
     line-height: 20px;
     margin: 4px 0 20px -6px;
@@ -2796,6 +3010,7 @@ label.invalid {
 
   .recom__button {
     min-width: 115px;
+    max-width: 100%;
     font-size: 16px;
     line-height: 22px;
     margin: 0 20px 0 0;

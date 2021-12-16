@@ -104,12 +104,14 @@
 	}
 
 	&__genre {
+		width: 120px;
 		font-size: 16px;
 		line-height: 22px;
 		margin: 0 0 24px 0;
 	}
 
 	&__price {
+		width: 120px;
 		margin: 0 0 24px 0;
 	}
 
@@ -200,7 +202,8 @@
 
 	&__button {
 		min-width: 101px;
-		height: 36px;
+		max-width: 108px;
+		min-height: 36px;
 		padding: 0px 10px;
 		border-radius: 50px;
 		background: $text-color;

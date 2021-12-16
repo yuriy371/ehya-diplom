@@ -57,6 +57,7 @@
 	}
 
 	&__title {
+		max-width: 120px;
 		font-weight: bold;
 		font-size: 18px;
 		line-height: 25px;
@@ -67,6 +68,7 @@
 	}
 
 	&__item {
+		max-width: 120px;
 		font-size: 16px;
 		line-height: 22px;
 		margin: 0 0 24px 0;
@@ -74,6 +76,7 @@
 
 	&__link {
 		position: relative;
+
 		color: $text-color;
 
 		&::after {

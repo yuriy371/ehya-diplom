@@ -17,16 +17,19 @@
 		rel="stylesheet">
 	<!-- Style -->
 	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
 	<link rel="stylesheet" href="css/style.min.css">
 	<!-- Script -->
 	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
 		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" defer></script>
 	<script src="js/index.js" defer></script>
 </head>
 
-<body>
+<body id="top">
 	<header class="header">
 		<div class="container">
 			<div class="header-wrapper">
@@ -41,7 +44,7 @@
 							<li class="nav__item"><a href="#" class="nav__link">Блог</a></li>
 						</ul>
 					</nav>
-					<button class="button header__button">
+					<button class="button header__button" data-toggle=modal>
 						Получить
 					</button>
 				</div>
@@ -500,23 +503,28 @@
 			<!-- /.author__info-block -->
 			<div class="author__story">
 				<div class="author__item-big">
-					<img src="./img/img-author/author-img-1.png" alt="" class="author__img-big">
-					<button class="author__button-play-big">
-						<svg class="icon">
-							<use xlink:href="img/icons/sprite.svg#btn-play"></use>
-						</svg>
-					</button>
+					<a data-fancybox="video-gallery" data-src="https://www.youtube.com/watch?v=ikT0auF8EsY">
+						<img src="./img/img-author/author-img-1.png" alt="" class="author__img-big">
+						<button class="author__button-play-big">
+							<svg class="icon">
+								<use xlink:href="img/icons/sprite.svg#btn-play"></use>
+							</svg>
+						</button>
+					</a>
 				</div>
 				<!-- /.author__item-big -->
 				<div class="author__items">
 					<div class="author__item">
 						<div class="author__item-img">
-							<img src="./img/img-author/author-img-2.png" alt="" class="author__img">
-							<button class="author__button-play">
-								<svg class="icon">
-									<use xlink:href="img/icons/sprite.svg#btn-play"></use>
-								</svg>
-							</button>
+							<a data-fancybox="video-gallery" data-src="https://www.youtube.com/watch?v=ikT0auF8EsY">
+								<img src="./img/img-author/author-img-2.png" alt="" class="author__img">
+								<button class="author__button-play">
+									<svg class="icon">
+										<use xlink:href="img/icons/sprite.svg#btn-play"></use>
+									</svg>
+								</button>
+							</a>
+
 						</div>
 						<!-- /.author__item-img -->
 						<div class="author__info">
@@ -538,12 +546,15 @@
 					<!-- /.author__item -->
 					<div class="author__item">
 						<div class="author__item-img">
-							<img src="./img/img-author/author-img-3.png" alt="" class="author__img">
-							<button class="author__button-play">
-								<svg class="icon">
-									<use xlink:href="img/icons/sprite.svg#btn-play"></use>
-								</svg>
-							</button>
+							<a data-fancybox="video-gallery" data-src="https://www.youtube.com/watch?v=ikT0auF8EsY">
+								<img src="./img/img-author/author-img-3.png" alt="" class="author__img">
+								<button class="author__button-play">
+									<svg class="icon">
+										<use xlink:href="img/icons/sprite.svg#btn-play"></use>
+									</svg>
+								</button>
+							</a>
+
 						</div>
 						<!-- /.author__item-img -->
 						<div class="author__info">
@@ -565,12 +576,15 @@
 					<!-- /.author__item -->
 					<div class="author__item">
 						<div class="author__item-img">
-							<img src="./img/img-author/author-img-4.png" alt="" class="author__img">
-							<button class="author__button-play">
-								<svg class="icon">
-									<use xlink:href="img/icons/sprite.svg#btn-play"></use>
-								</svg>
-							</button>
+							<a data-fancybox="video-gallery" data-src="https://www.youtube.com/watch?v=ikT0auF8EsY">
+								<img src="./img/img-author/author-img-4.png" alt="" class="author__img">
+								<button class="author__button-play">
+									<svg class="icon">
+										<use xlink:href="img/icons/sprite.svg#btn-play"></use>
+									</svg>
+								</button>
+							</a>
+
 						</div>
 						<!-- /.author__item-img -->
 						<div class="author__info">
@@ -817,23 +831,26 @@
 						креативный веб-сайт с crealand
 					</p>
 					<ul class="footer__social-list">
-						<li class="footer__item-social"><a href="https://www.google.com/" class="footer__link-social">
+						<li class="footer__item-social"><a href="https://www.google.com/" class="footer__link-social"
+								target="_blank">
 								<svg class="icon">
 									<use xlink:href="img/icons/sprite.svg#google-soc"></use>
 								</svg>
 							</a></li>
-						<li class="footer__item-social"><a href="https://twitter.com/" class="footer__link-social">
+						<li class="footer__item-social"><a href="https://twitter.com/" class="footer__link-social"
+								target="_blank">
 								<svg class="icon">
 									<use xlink:href="img/icons/sprite.svg#tw"></use>
 								</svg>
 							</a></li>
-						<li class="footer__item-social"><a href="https://www.instagram.com/"
-								class="footer__link-social">
+						<li class="footer__item-social"><a href="https://www.instagram.com/" class="footer__link-social"
+								target="_blank">
 								<svg class="icon">
 									<use xlink:href="img/icons/sprite.svg#inst"></use>
 								</svg>
 							</a></li>
-						<li class="footer__item-social"><a href="https://ru.linkedin.com/" class="footer__link-social">
+						<li class="footer__item-social"><a href="https://ru.linkedin.com/" class="footer__link-social"
+								target="_blank">
 								<svg class="icon">
 									<use xlink:href="img/icons/sprite.svg#in"></use>
 								</svg>
@@ -903,6 +920,35 @@
 		<!-- /.container -->
 	</footer>
 	<!-- /.footer -->
+	<div class="modal">
+		<div class="modal__overlay"></div>
+		<!-- /.modal__overlay -->
+		<div class="modal__dialog">
+			<a href="#" class="modal__close">
+			</a>
+			<h3 class="modal__title">
+				Получить книгу
+			</h3>
+			<form action="send.php" method="POST" class="modal__form form">
+				<input type="text" name="name" class="input modal__input" placeholder="Your Full Name*" required>
+				<input type="tel" name="phone" class="input modal__input" placeholder="Phone Number*" required>
+				<input type="email" name="email" class="input modal__input" placeholder="Email*" required>
+				<textarea class="modal__message" name="message" placeholder="Message"></textarea>
+				<div class="modal__wrapper-btn">
+					<button class="button modal__button">Отправить</button>
+					<span class="modal__info">* Обязательные поля</span>
+				</div>
+			</form>
+		</div>
+		<!-- /.modal__dialog -->
+	</div>
+	<!-- /.modal -->
+	<a href="#" class="up">
+		<svg class="icon">
+			<use xlink:href="img/icons/sprite.svg#up"></use>
+		</svg>
+	</a>
+	<!-- /.up -->
 </body>
 
 </html>

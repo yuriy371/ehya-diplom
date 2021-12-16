@@ -596,6 +596,12 @@
 			&::after {
 			}
 		}
+		&__btn {
+			&:hover {
+				background: #faad13;
+				color: $primary;
+			}
+		}
 	}
 	.footer {
 		padding: 58px 0 40px 0;
@@ -651,6 +657,12 @@
 		}
 		& .more {
 			grid-row: 2;
+		}
+	}
+	.up {
+		& .icon {
+			width: 20px;
+			height: 20px;
 		}
 	}
 }
@@ -809,6 +821,7 @@
 		}
 
 		&__genre {
+			width: 100%;
 			font-size: 14px;
 			line-height: 20px;
 			text-align: center;
@@ -816,6 +829,7 @@
 		}
 
 		&__price {
+			width: 100%;
 			font-size: 15px;
 			line-height: 20px;
 			margin: 4px 0 20px -6px;
@@ -827,6 +841,7 @@
 
 		&__button {
 			min-width: 115px;
+			max-width: 100%;
 			font-size: 16px;
 			line-height: 22px;
 			margin: 0 20px 0 0;

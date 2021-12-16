@@ -1,0 +1,18 @@
+.up {
+	position: fixed;
+	display: none;
+	bottom: 15px;
+	right: 15px;
+	background: $text-color;
+	padding: 10px;
+	border-radius: 5px;
+	z-index: 99;
+	&.view {
+		display: block;
+	}
+	& .icon {
+		width: 30px;
+		height: 30px;
+		fill: $primary;
+	}
+}
