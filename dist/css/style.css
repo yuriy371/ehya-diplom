@@ -2804,6 +2804,10 @@ label.invalid {
     grid-row: 2;
   }
 
+  .modal__dialog {
+    padding: 33px 10px;
+  }
+
   .up .icon {
     width: 20px;
     height: 20px;
@@ -3498,6 +3502,10 @@ label.invalid {
     font-size: 14px;
     line-height: 20px;
   }
+
+  .modal__dialog {
+    width: 400px;
+  }
 }
 
 @media (max-width: 480px) and (min-width: 320px) {
@@ -3597,6 +3605,18 @@ label.invalid {
 
   .footer .company {
     grid-column: span 1;
+  }
+
+  .modal__dialog {
+    width: 300px;
+  }
+
+  .modal__input {
+    min-width: 250px;
+  }
+
+  .modal__button {
+    min-width: 120px;
   }
 }
 

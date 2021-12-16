@@ -659,6 +659,11 @@
 			grid-row: 2;
 		}
 	}
+	.modal {
+		&__dialog {
+			padding: 33px 10px;
+		}
+	}
 	.up {
 		& .icon {
 			width: 20px;
@@ -1247,6 +1252,11 @@
 			line-height: 20px;
 		}
 	}
+	.modal {
+		&__dialog {
+			width: 400px;
+		}
+	}
 }
 @media (max-width: 480px) and (min-width: 320px) {
 	.container {
@@ -1347,6 +1357,19 @@
 		}
 		& .company {
 			grid-column: span 1;
+		}
+	}
+	.modal {
+		&__dialog {
+			width: 300px;
+		}
+
+		&__input {
+			min-width: 250px;
+		}
+
+		&__button {
+			min-width: 120px;
 		}
 	}
 }
