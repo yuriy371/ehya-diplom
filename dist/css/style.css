@@ -1273,6 +1273,7 @@ button {
   -webkit-transition: background 0.5s, fill 0.5s;
   -o-transition: background 0.5s, fill 0.5s;
   transition: background 0.5s, fill 0.5s;
+  cursor: pointer;
 }
 
 .author__button-play-big .icon {
@@ -1336,6 +1337,7 @@ button {
   -webkit-transition: fill 0.5s;
   -o-transition: fill 0.5s;
   transition: fill 0.5s;
+  cursor: pointer;
 }
 
 .author__button-play .icon {
@@ -1701,6 +1703,7 @@ button {
 
 label.invalid {
   color: red;
+  font-size: 14px;
 }
 
 .footer {

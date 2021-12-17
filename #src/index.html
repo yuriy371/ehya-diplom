@@ -40,9 +40,9 @@
 				<div class="header__nav-wrapper">
 					<nav class="nav">
 						<ul class="nav__list">
-							<li class="nav__item"><a href="#" class="nav__link">Рекомендации</a></li>
-							<li class="nav__item"><a href="#" class="nav__link">Книги</a></li>
-							<li class="nav__item"><a href="#" class="nav__link">Блог</a></li>
+							<li class="nav__item"><a href="#products" class="nav__link">Рекомендации</a></li>
+							<li class="nav__item"><a href="#book" class="nav__link">Книги</a></li>
+							<li class="nav__item"><a href="#blog" class="nav__link">Блог</a></li>
 						</ul>
 					</nav>
 					<button class="button header__button" data-toggle=modal>
@@ -78,7 +78,7 @@
 						Теперь я делюсь своими золотыми стратегиями ценообразования на творческую работу.
 					</p>
 					<div class="about-book__wrapper-btn">
-						<button class="button about-book__buy">
+						<button class="button about-book__buy" data-toggle=modal>
 							Купить сейчас
 						</button>
 						<!-- /.button about-book__buy -->
@@ -104,7 +104,7 @@
 		<div class="container">
 			<div class="products__wrapper">
 				<div class="products__recommendations">
-					<h2 class="products__title">
+					<h2 class="products__title" id="products">
 						Рекомендации
 					</h2>
 					<div class="products__cards recom">
@@ -118,7 +118,7 @@
 								<span class="recom__genre">Art & Design</span>
 								<span class="recom__price">$25.00</span>
 								<div class="recom__wrapper-btn">
-									<button class="recom__button">
+									<button class="recom__button" data-toggle=modal>
 										Купить
 									</button>
 									<button class="recom__like-btn">
@@ -142,7 +142,7 @@
 								<span class="recom__genre">Education</span>
 								<span class="recom__price">$28.00</span>
 								<div class="recom__wrapper-btn">
-									<button class="recom__button">
+									<button class="recom__button" data-toggle=modal>
 										Купить
 									</button>
 									<button class="recom__like-btn">
@@ -166,7 +166,7 @@
 								<span class="recom__genre">Novel</span>
 								<span class="recom__price">$19.50</span>
 								<div class="recom__wrapper-btn">
-									<button class="recom__button">
+									<button class="recom__button" data-toggle=modal>
 										Купить
 									</button>
 									<button class="recom__like-btn">
@@ -190,7 +190,7 @@
 								<span class="recom__genre">Novel</span>
 								<span class="recom__price">$20.00</span>
 								<div class="recom__wrapper-btn">
-									<button class="recom__button">
+									<button class="recom__button" data-toggle=modal>
 										Купить
 									</button>
 									<button class="recom__like-btn">
@@ -214,7 +214,7 @@
 								<span class="recom__genre">Business</span>
 								<span class="recom__price">$23.00</span>
 								<div class="recom__wrapper-btn">
-									<button class="recom__button">
+									<button class="recom__button" data-toggle=modal>
 										Купить
 									</button>
 									<button class="recom__like-btn">
@@ -238,7 +238,7 @@
 								<span class="recom__genre">Motivation</span>
 								<span class="recom__price">$23.00</span>
 								<div class="recom__wrapper-btn">
-									<button class="recom__button">
+									<button class="recom__button" data-toggle=modal>
 										Купить
 									</button>
 									<button class="recom__like-btn">
@@ -273,7 +273,7 @@
 								</h3>
 								<span class="prod-top__price">$23.00</span>
 								<div class="prod-top__wrapper-btn">
-									<button class="prod-top__button">
+									<button class="prod-top__button" data-toggle=modal>
 										Купить
 									</button>
 								</div>
@@ -290,7 +290,7 @@
 								</h3>
 								<span class="prod-top__price">$23.00</span>
 								<div class="prod-top__wrapper-btn">
-									<button class="prod-top__button">
+									<button class="prod-top__button" data-toggle=modal>
 										Купить
 									</button>
 								</div>
@@ -307,7 +307,7 @@
 								</h3>
 								<span class="prod-top__price">$23.00</span>
 								<div class="prod-top__wrapper-btn">
-									<button class="prod-top__button">
+									<button class="prod-top__button" data-toggle=modal>
 										Купить
 									</button>
 								</div>
@@ -324,7 +324,7 @@
 								</h3>
 								<span class="prod-top__price">$23.00</span>
 								<div class="prod-top__wrapper-btn">
-									<button class="prod-top__button">
+									<button class="prod-top__button" data-toggle=modal>
 										Купить
 									</button>
 								</div>
@@ -441,7 +441,7 @@
 	<section class="unpublished">
 		<div class="container">
 			<div class="unpublished__wrapper-slider">
-				<h2 class="unpublished__title">
+				<h2 class="unpublished__title" id="book">
 					Неизданные книги
 				</h2>
 				<div class="swiper unpublished__slider">
@@ -710,7 +710,7 @@
 		<div class="container">
 			<div class="blog__wrapper">
 				<div class="blog__main">
-					<h2 class="blog__title-blog">
+					<h2 class="blog__title-blog" id="blog">
 						Ehya Блог
 					</h2>
 					<div class="blog__main-news">
@@ -932,10 +932,10 @@
 				Получить книгу
 			</h3>
 			<form action="send.php" method="POST" class="modal__form form">
-				<input type="text" name="name" class="input modal__input" placeholder="Your Full Name*" required>
-				<input type="tel" name="phone" class="input modal__input" placeholder="Phone Number*" required>
-				<input type="email" name="email" class="input modal__input" placeholder="Email*" required>
-				<textarea class="modal__message" name="message" placeholder="Message"></textarea>
+				<input type="text" name="name" class="input modal__input" placeholder="Введите имя*" required>
+				<input type="tel" name="phone" class="input modal__input" placeholder="Телефон*" required>
+				<input type="email" name="email" class="input modal__input" placeholder="Почта*" required>
+				<textarea class="modal__message" name="message" placeholder="Сообщение"></textarea>
 				<div class="modal__wrapper-btn">
 					<button class="button modal__button">Отправить</button>
 					<span class="modal__info">* Обязательные поля</span>

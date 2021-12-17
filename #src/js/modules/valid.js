@@ -6,6 +6,10 @@ const valid = () => {
 				name: {
 					required: true,
 					minlength: 2
+				},
+				phone: {
+					required: true,
+					minlength: 18
 				}
 			},
 			messages: {
@@ -19,6 +23,7 @@ const valid = () => {
 				},
 				phone: {
 					required: "Укажите номер телефона для связи",
+					minlength: "Введите телефон полностью"
 				}
 			}
 		});
