@@ -43,6 +43,9 @@
 	}
 
 	&__button-more {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		min-width: 100%;
 		min-height: 72px;
 		background: rgba(21, 101, 216, 0.1);
@@ -70,6 +73,9 @@
 	}
 
 	&__button-best {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		min-width: 100%;
 		font-family: Roboto Condensed;
 		font-weight: bold;

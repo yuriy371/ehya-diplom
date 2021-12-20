@@ -823,6 +823,15 @@ button {
 }
 
 .products__button-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-width: 100%;
   min-height: 72px;
   background: rgba(21, 101, 216, 0.1);
@@ -855,6 +864,15 @@ button {
 }
 
 .products__button-best {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-width: 100%;
   font-family: Roboto Condensed;
   font-weight: bold;
@@ -1515,6 +1533,15 @@ button {
 }
 
 .blog__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 179px;
   height: 44px;
   background: none;
@@ -3620,6 +3647,7 @@ label.invalid {
 
   .modal__button {
     min-width: 120px;
+    margin: 0 10px 0 0;
   }
 }
 
